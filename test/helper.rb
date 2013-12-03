@@ -22,7 +22,7 @@ unless ENV.has_key?('VERBOSE')
   $log = nulllogger
 end
 
-require 'fluent/plugin/out_rewrite_tag_filter'
+require 'fluent/plugin/out_rtf_dash'
 
 class Test::Unit::TestCase
 end
