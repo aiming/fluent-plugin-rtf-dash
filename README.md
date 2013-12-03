@@ -1,5 +1,28 @@
 # fluent-plugin-rtf-dash [![Build Status](https://travis-ci.org/aiming/fluent-plugin-rtf-dash.png?branch=master)](https://travis-ci.org/aiming/fluent-plugin-rtf-dash)
 
+# example
+
+```
+<match test.*.api>
+  <store>
+    type rtf_dash
+    use_of_first_match_tag_regexp \w+\.(\w+)\.
+    rewriterule1 user_id .* output.test_play_${tag}.api
+    rewriterule2 world_id .* output.world.api
+  </store>
+  
+  <store>
+    type file
+    path /var/log/debug.log
+  </store>
+</match>
+
+<match output.*.api>
+  type   tdlog
+  apikey ********************
+</match>
+```
+
 ## Copyright
 
 ### reference: [fluent-plugin-rewrite-tag-filter](https://github.com/fluent/fluent-plugin-rewrite-tag-filter)
