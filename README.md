@@ -1,4 +1,4 @@
-# fluent-plugin-rtf-dash [![Build Status](https://travis-ci.org/aiming/fluent-plugin-rtf-dash.png?branch=master)](https://travis-ci.org/aiming/fluent-plugin-rtf-dash)
+# fluent-plugin-rtf-dash, a plugin for [Fluentd](http://fluentd.org) [![Build Status](https://travis-ci.org/aiming/fluent-plugin-rtf-dash.png?branch=master)](https://travis-ci.org/aiming/fluent-plugin-rtf-dash)
 
 # example
 
